@@ -220,7 +220,3 @@ Agentic-RAG/
 ---
 
 <div align="center">
-
-**如果这个项目对你有帮助，欢迎点一个 ⭐️**
-
-</div>
