@@ -1,6 +1,6 @@
 <div align="center">
 
-# VANTAGE · Agentic RAG 知识库平台
+# Agentic RAG 知识库平台
 
 **向量检索 + 知识图谱 + 智能体自适应路由**
 
@@ -15,7 +15,7 @@
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![VANTAGE Landing](assets/screenshots/01-landing.png)
+![Landing](assets/screenshots/01-landing.png)
 
 </div>
 
@@ -23,9 +23,9 @@
 
 ## 📖 项目简介
 
-**VANTAGE** 是一个**生产级的通用 Agentic RAG 知识库平台**：客户接入自己的私有文档，即可构建一套"向量检索 + 知识图谱"双引擎、由大模型智能体自适应路由的问答系统。领域不限——本仓库以**医药（呼吸内科）100 篇知识文档**作为验证场景，把效果跑通并量化。
+本项目是一个**生产级的通用 Agentic RAG 知识库平台**：客户接入自己的私有文档，即可构建一套"向量检索 + 知识图谱"双引擎、由大模型智能体自适应路由的问答系统。领域不限——本仓库以**医药（呼吸内科）100 篇知识文档**作为验证场景，把效果跑通并量化。
 
-它要解决的核心痛点是：**传统向量 RAG 只懂"语义相似"，在需要沿实体关系游走的"多跳关系问题"上召回很差。** VANTAGE 的思路是：
+它要解决的核心痛点是：**传统向量 RAG 只懂"语义相似"，在需要沿实体关系游走的"多跳关系问题"上召回很差。** 本项目的思路是：
 
 > 用 **知识图谱** 补上向量 RAG 在多跳关系问题上的硬伤，再用一个 **大模型驱动的 Agent 做自适应检索路由**——简单问题走轻量混合检索、复杂关系问题才触发图谱多跳推理，从而在 **效果 / 成本 / 延迟** 之间取得最优平衡。
 
@@ -161,8 +161,8 @@
 **1. 克隆代码并初始化**
 
 ```powershell
-git clone https://github.com/cyxcathy0418-code/VANTAGE-Rag.git
-cd VANTAGE-Rag
+git clone https://github.com/cyxcathy0418-code/Agentic-RAG.git
+cd Agentic-RAG
 
 # Windows PowerShell
 .\scripts\init.ps1
@@ -188,7 +188,7 @@ docker compose up --build
 ## 📁 项目结构
 
 ```
-VANTAGE-Agentic-RAG/
+Agentic-RAG/
 ├── backend/            # FastAPI 后端、LangGraph 智能体、检索/图谱/评测内核
 │   ├── server/         #   API 服务
 │   ├── package/        #   核心包（配置、工具、知识库链路）
